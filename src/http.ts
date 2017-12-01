@@ -192,6 +192,6 @@ export const SERVER_HTTP_PROVIDERS: Provider[] = [
 	{
 		provide: HttpHandler,
 		useFactory: zoneWrappedInterceptingHandler,
-		deps: [HttpBackend, [new Optional(), HTTP_INTERCEPTORS]]
+		deps: [HttpBackend]
 	}
 ];

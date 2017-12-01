@@ -6,8 +6,6 @@ import { HttpBackend } from './src/common-http/src/backend';
 import { Type } from 'injection-js/facade/type';
 import { HTTP_INTERCEPTORS } from './src/common-http/src/interceptor';
 
-require('zone.js');
-
 export const HTTP_CLIENT_PROVIDERS: Provider[] = [
 	...SERVER_HTTP_PROVIDERS,
 	HttpClient,
